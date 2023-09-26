@@ -16,14 +16,12 @@ body {
 
 .info-bar {
     display: flex;
-    flex-grow: 1;
     height: 30px;
     background-color: rgb(255, 132, 0);
     width: 70%;
 }
 
-.logo, .menu {
-    flex-basis: 20%;
+.logo, .menu, .details {
     background-color: rgb(255, 132, 0);
     height: 100%;
     display: flex;
@@ -32,9 +30,16 @@ body {
     border-right: 1px dashed black;
 }
 
-.menu {
-    flex-grow: 2;
+.logo, .details {
+    flex-basis: 20%;
+    flex-grow: 0;
 }
+
+.menu {
+    flex-grow: 2; 
+}
+
+
 
 .header-bottom {
     background-color: blue;
